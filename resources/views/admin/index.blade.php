@@ -9,7 +9,7 @@
 @section('content')
 
 <div class="alert alert-warning mt-4" role="alert">
-  <b>Atención </b> ... Escribir mensajes a tener en cuenta
+  <b>Atención <i class="fas fa-exclamation-circle ml-1"></i></b> ... Bienvenid(a) a nuestro aplicativo
 </div>
 
 
@@ -18,9 +18,9 @@
     Bienvenid (a)
   </div>
   <div class="card-body">
-    <h5 class="card-title">Hola ..... Te damos la bienvenida a nuestro aplicativo</h5>
+    <h5 class="card-title">Hola <b>{{Auth()->user()->name;}}</b> Te damos la bienvenida a nuestro aplicativo</h5>
     <br>
-    <p class="card-text">ahi esta CONAZOOOOO</p>
+    
   </div>
 </div>
 
@@ -35,6 +35,5 @@
 @stop
 
 @section('js')
-    <script> console.log('Hi!'); </script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+   
 @stop
